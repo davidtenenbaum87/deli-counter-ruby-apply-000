@@ -1,5 +1,5 @@
 def line(katz_deli)
   line = katz_deli.map.with_index(1) { |name, idx| "#{idx}. #{name}"}.join(" ")
   puts "The line is currently empty." if katz_deli.empty?
-  puts "The line is currently " + line if katz_deli.empty? == false
+  puts "The line is currently: #{line}" if katz_deli.empty? == false
 end
